@@ -1,0 +1,18 @@
+<html>
+    <script>
+        var obj = {
+
+val: 100
+
+}
+
+function fun(a, b , c){
+
+console.log(this.val + a + b + c)
+
+}
+
+fun.apply(obj,[ 3, 4, 5])
+    </script>
+</html>
+//o/p=112

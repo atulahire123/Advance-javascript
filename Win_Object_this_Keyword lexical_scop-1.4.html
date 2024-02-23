@@ -1,0 +1,20 @@
+<html>
+ <script>
+function outerfunction()
+ {
+console.log(a);
+var c = 10;
+
+innerfunction();
+function innerfunction() 
+{
+console.log(b);
+console.log(c);
+}
+}
+var a = 7;
+var b =3
+outerfunction();
+    </script>
+</html>
+o/p=7 3 10

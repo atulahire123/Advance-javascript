@@ -1,0 +1,27 @@
+<html>
+<script>
+    var a = 2;
+      var c = 2;
+    function b()
+    {var x = 2;
+        var c = 4
+           console.log(c)
+        }
+console.log(a);
+console.log(this.a);
+console.log(this.c)
+console.log(this.x)
+console.log(window.a)
+console.log(window.x)
+console.log(b());
+</script>
+</html>
+o/p=
+     2  // Output of console.log(a)
+     2  // Output of console.log(this.a)
+     2  // Output of console.log(window.a)
+     undefined  // Output of console.log(this.x)
+     2  // Output of console.log(window.x)
+     undefined  // Output of console.log(b()) -> 4 is logged inside the function but the function itself doesn't return anything explicitly, hence it's undefined
+     4  // Output of console.log(c) inside the function b()
+     undefined  // Output of console.log(this.c) -> c is not defined as a property of the global object
